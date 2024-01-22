@@ -13,6 +13,7 @@ import defaultImage from "@assets/bank-iran/no-img.png";
 import {toast} from "react-toastify";
 import IBAN from "../../../utilities/Converter.ts";
 import ChangeBankAccountType from "../../bank/components/changeBankAccountType.jsx";
+import {Helmet} from "react-helmet-async";
 
 
 const MainPage = () => {
@@ -125,6 +126,21 @@ const MainPage = () => {
     };
     return (
         <>
+            <div>
+                <Helmet>
+                    <title>شباویز</title>
+                    <meta name="description" content="تبدیل رایگان شماره کارت و شماره حساب به شماره شبا بانک‌ها"/>
+                    <meta name="keywords"
+                          content="تبدیل رایگان شماره کارت,بانک,شماره شبا,شماره حساب,شماره کارت,تبدیل شماره حساب به شماره شبا,تبدیل شماره کارت به شماره شبا,تبدیل شماره کارت به شماره حساب"/>
+                    <meta property="og:title" content="شباویز"/>
+                    <meta property="og:description"
+                          content="تبدیل رایگان شماره کارت و شماره حساب به شماره شبا بانک‌ها"/>
+                    <meta property="og:url" content="https://shebawiz.ir"/>
+                    <meta name="twitter:title" content="شباویز"/>
+                    <meta name="twitter:description"
+                          content="تبدیل رایگان شماره کارت و شماره حساب به شماره شبا بانک‌ها"/>
+                </Helmet>
+            </div>
             <div className='text-center mt-4'>
                 <h1 className="h2 fw-bolder">شبــــاویــــز</h1>
                 <p className="text-muted lead fw-bold ">تبدیل رایگان شماره کارت و شماره حساب به شماره شبا بانک‌ها</p>
